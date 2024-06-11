@@ -1,0 +1,224 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+a {
+    color: #650ec2;
+    text-decoration: none;
+}
+
+/* Banner Section */
+#banner {
+    background: rgb(221, 208, 219);
+    padding: 20px 0;
+    text-align: center; /* Center the text */
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.profile-picture {
+    width: 200px;
+    height: 250px;
+    border-radius: 0; /* Rectangular picture */
+    margin-bottom: 20px;
+}
+
+.banner-text {
+    max-width: 600px; /* Control the width of the text block */
+    text-align: center; /* Center the text within the text block */
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+/* About Me Section */
+#about {
+    padding: 20px 0;
+    background: rgb(221, 208, 219);
+    text-align: center;
+}
+
+.about-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.column h3 {
+    margin-top: 0;
+}
+
+.column ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Portfolio Section */
+#portfolio {
+    padding: 20px 0;
+    background: rgb(221, 208, 219);
+}
+
+.project {
+    margin: 20px 0;
+}
+
+.project-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.project-image {
+    width: 250px;
+    height: 150px;
+    margin-left: 20px;
+    flex-shrink: 0;
+}
+
+.project-details {
+    flex: 1;
+}
+
+.project-details h3 {
+    margin-top: 0;
+}
+
+.project-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.project-details ul li {
+    margin-bottom: 5px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 20px 0;
+    background: rgb(221, 208, 219);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .banner-content {
+        align-items: center; /* Center items horizontally */
+    }
+
+    .profile-picture {
+        width: 150px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .banner-text {
+        text-align: center;
+    }
+
+    .about-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .project-image {
+        margin: 10px 0;
+    }
+
+    .project-details ul {
+        padding-left: 0;
+    }
+
+    .project-details {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-picture {
+        width: 100px;
+        height: auto;
+    }
+
+    .column {
+        min-width: 100%;
+    }
+
+    form input, form textarea {
+        max-width: 100%;
+    }
+}
